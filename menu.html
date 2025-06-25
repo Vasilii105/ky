@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Основное -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Мета для мобилки -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Мета сайта -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/f10.jpg" type="">
+
+  <title> JZX </title>
+
+  <!-- бутстрап -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- слайдер -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- селект -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- иконки -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- стили -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- адаптив -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page" style="background: linear-gradient(rgba(24,24,24,0.65), rgba(24,24,24,0.65)), url('images/bodybeat-cars-toyota-chaser-dropped-chocolate-30.jpg') no-repeat center center fixed; background-size: cover;">
+
+  <div class="hero_area">
+    <!-- шапка -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              JZX
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+            <li style="margin-right: 50px;"></li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark" href="index.html">Главная </a>
+              </li>
+              <li style="margin-right: 20px;"></li>
+              <li class="nav-item active">
+                <a  class="nav-link active" href="menu.html">Машины <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" href="about.html">О Нас</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" href="book.html">Связаться с нами</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- конец шапки -->
+  </div>
+
+  <!-- машины -->
+  <section class="food_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Наши Предложения
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">ВСЕ</li>
+        <li data-filter=".burger">MARK</li>
+        <li data-filter=".pizza">CHASER</li>
+        <li data-filter=".pasta">CROWN</li>
+        <li data-filter=".fries">SILVIA</li>
+      </ul>
+      
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f1.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA CHASER
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX100</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GTE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Снежинка</div>
+                    <div class="info-line"><strong>Особенности:</strong> Кузов с люком</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      2 000 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA CHASER', 'JZX100', '1JZ-GTE 2.5L', 'VERTEX', 'WORK', 'Снежинка', 'Кузов с люком', '1999', '180 000 км', 'images/f1.jpg', '2 000 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f2.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA MARK II
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX105</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GTE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> TOURER V</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Серый велюр</div>
+                    <div class="info-line"><strong>Особенности:</strong> Спортивная подвеска</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      2 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA MARK II', 'JZX105', '1JZ-GTE 2.5L', 'TOURER V', 'WORK', 'Серый велюр', 'Спортивная подвеска', '1996', '210 000 км', 'images/f2.jpg', '2 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f3.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA CHASER
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX100</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 2JZ-GTE 3.0L</div>
+                    <div class="info-line"><strong>Обвес:</strong> TOURER V</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> ENKEY</div>
+                    <div class="info-line"><strong>Салон:</strong> Велюр</div>
+                    <div class="info-line"><strong>Особенности:</strong> Турбо</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      3 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA CHASER', 'JZX100', '2JZ-GTE 3.0L', 'TOURER V', 'ENKEY', 'Велюр', 'Турбо', '1998', '170 000 км', 'images/f3.jpg', '3 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f4.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA CROWN
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX81</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1G-FE 2.0L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> ENKEY</div>
+                    <div class="info-line"><strong>Салон:</strong> Велюр коричневый</div>
+                    <div class="info-line"><strong>Особенности:</strong> Классика</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      1 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA CROWN', 'JZX81', '1G-FE 2.0L', 'VERTEX', 'ENKEY', 'Велюр коричневый', 'Классика', '1986', '295 000 км', 'images/f4.jpg', '1 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/F5.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    NISSAN SILVIA 
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> S15</div>
+                    <div class="info-line"><strong>Двигатель:</strong> SR20DE 2.0L</div>
+                    <div class="info-line"><strong>Обвес:</strong> GP</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Кожанный</div>
+                    <div class="info-line"><strong>Особенности:</strong> Люк</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      7 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('NISSAN SILVIA S15', 'S15', 'SR20DE 2.0L', 'GP', 'WORK', 'Кожанный', 'Люк', '2004', '110 000 км', 'images/F5.jpg', '7 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f6.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA CHASER
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX81</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GTE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Снежинка</div>
+                    <div class="info-line"><strong>Особенности:</strong> Люк</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      2 000 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA CHASER', 'JZX81', '1JZ-GTE 2.5L', 'VERTEX', 'WORK', 'Снежинка', 'Люк', '1987', '310 000 км', 'images/f6.jpg', '2 000 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f7.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA MARKII
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX100</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Черная снежинка</div>
+                    <div class="info-line"><strong>Особенности:</strong> Trente</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      1 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA MARKII', 'JZX100', '1JZ-GE 2.5L', 'VERTEX', 'WORK', 'Черная снежинка', 'Trente', '1999', '175 000 км', 'images/f7.jpg', '1 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f8.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA MARKII
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX100</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Велюр коричневый</div>
+                    <div class="info-line"><strong>Особенности:</strong> Комфорт</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      2 000 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA MARKII', 'JZX100', '1JZ-GE 2.5L', 'VERTEX', 'WORK', 'Велюр коричневый', 'Комфорт', '1993', '230 000 км', 'images/f8.jpg', '2 000 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f9.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    TOYOTA CROWN
+                  </h5>
+                  <div class="car-info">
+                    <div class="info-line"><strong>Модель:</strong> JZX100</div>
+                    <div class="info-line"><strong>Двигатель:</strong> 1JZ-GTE 2.5L</div>
+                    <div class="info-line"><strong>Обвес:</strong> VERTEX</div>
+                    <div class="info-line"><strong>Подвеска:</strong> Койловеры</div>
+                    <div class="info-line"><strong>Диски:</strong> WORK</div>
+                    <div class="info-line"><strong>Салон:</strong> Велюр коричневый</div>
+                    <div class="info-line"><strong>Особенности:</strong> Премиум</div>
+                  </div>
+                  <div class="options">
+                    <h6>
+                      2 500 000 ₽
+                    </h6>
+                    <button class="btn-details" onclick="showCarDetails('TOYOTA CROWN', 'JZX100', '1JZ-GTE 2.5L', 'VERTEX', 'WORK', 'Велюр коричневый', 'Премиум', '1994', '225 000 км', 'images/f9.jpg', '2 500 000 ₽')">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+
+      </div>
+    </div>
+  </section>
+  <!-- конец машин -->
+
+  <!-- подвал -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Контакты
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +7 952 812 52 52
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Ленинский проспект 115
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              JZX
+
+            </a>
+            <p>
+              Здесь про машины
+            </p>
+            <div class="social-links">
+              <a href="https://t.me/jzx_cars" target="_blank" class="social-link">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="https://vk.com/lxstmamind" target="_blank" class="social-link">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+                <span>ВКонтакте</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Режим работы 
+          </h4>
+          <p>
+            Понедельник-Пятница
+          </p>
+          <p>
+            12:00-19:00
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+
+          &copy; <span id="displayYear"></span> Все права защищены
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- конец подвала -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- бутстрап js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- слайдер -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- изотоп -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- селект -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- карта -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- конец карты -->
+
+  <script>
+    // Глобальные переменные для хранения данных о машине
+    let currentCarData = {};
+    
+    function showCarDetails(title, model, engine, bodykit, wheels, interior, features, year, mileage, imageSrc, price) {
+      // Сохраняем данные о машине
+      currentCarData = {
+        title: title,
+        model: model,
+        engine: engine,
+        bodykit: bodykit,
+        wheels: wheels,
+        interior: interior,
+        features: features,
+        year: year,
+        mileage: mileage,
+        imageSrc: imageSrc,
+        price: price
+      };
+      
+      // заполнение
+      document.getElementById('carDetailTitle').textContent = title || '-';
+      document.getElementById('carDetailModel').textContent = model || '-';
+      document.getElementById('carDetailEngine').textContent = engine || '-';
+      document.getElementById('carDetailBodykit').textContent = bodykit || '-';
+      document.getElementById('carDetailWheels').textContent = wheels || '-';
+      document.getElementById('carDetailInterior').textContent = interior || '-';
+      document.getElementById('carDetailFeatures').textContent = features && features.trim() ? features : '-';
+      document.getElementById('carDetailYear').textContent = year || '-';
+      document.getElementById('carDetailMileage').textContent = mileage || '-';
+      document.getElementById('carDetailImage').src = imageSrc || '';
+      document.getElementById('carDetailPrice').textContent = price || '-';
+      
+      // окно
+      $('#carDetailsModal').modal('show');
+    }
+    
+    function submitApplication() {
+      // Создаем строку с данными о машине для передачи
+      const carInfo = `${currentCarData.title} ${currentCarData.model} (${currentCarData.engine})`;
+      
+      // Кодируем данные для URL
+      const encodedCarInfo = encodeURIComponent(carInfo);
+      
+      // Переходим на страницу заявки с данными о машине
+      window.location.href = `book.html?car=${encodedCarInfo}`;
+    }
+  </script>
+
+  <!-- окно машины -->
+  <div class="modal fade" id="carDetailsModal" tabindex="-1" role="dialog" aria-labelledby="carDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="carDetailsModalLabel">Подробная информация</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="car-details-container">
+            <div class="car-image-large">
+              <img id="carDetailImage" src="" alt="Car Image">
+            </div>
+            <div class="car-info-detailed">
+              <h3 id="carDetailTitle"></h3>
+              <div class="car-specs-horizontal">
+                <div class="spec-item">
+                  <span class="spec-label">Модель:</span>
+                  <span class="spec-value" id="carDetailModel"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Двигатель:</span>
+                  <span class="spec-value" id="carDetailEngine"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Обвес:</span>
+                  <span class="spec-value" id="carDetailBodykit"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Диски:</span>
+                  <span class="spec-value" id="carDetailWheels"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Салон:</span>
+                  <span class="spec-value" id="carDetailInterior"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Особенности:</span>
+                  <span class="spec-value" id="carDetailFeatures"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Подвеска:</span>
+                  <span class="spec-value">Койловеры</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Тормоза:</span>
+                  <span class="spec-value">Дисковые</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Трансмиссия:</span>
+                  <span class="spec-value">Механика</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Год выпуска:</span>
+                  <span class="spec-value" id="carDetailYear"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Пробег:</span>
+                  <span class="spec-value" id="carDetailMileage"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Состояние:</span>
+                  <span class="spec-value">Отличное</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Документы:</span>
+                  <span class="spec-value">В порядке</span>
+                </div>
+              </div>
+              <div class="car-price-detailed">
+                <span class="price-label">Цена:</span>
+                <span class="price-value" id="carDetailPrice"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary" onclick="submitApplication()">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

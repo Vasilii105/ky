@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Основное -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Мета для мобилки -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Мета сайта -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/f10.jpg" type="">
+
+  <title> JZX </title>
+
+  <!-- бутстрап -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- слайдер -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- селект -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- иконки -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- стили -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- адаптив -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Убираем отступы у body и html */
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    /* Видео фон для страницы "О нас" */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .video-background video {
+      position: absolute;
+      top: -15%;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Затемнение поверх видео */
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+    
+    /* Обеспечиваем читаемость контента */
+    .sub_page {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Улучшаем стили для секции "О нас" */
+    .about_section {
+      background: transparent;
+      backdrop-filter: none;
+      border-radius: 20px;
+      margin: 30px 0;
+      padding: 40px;
+      border: none;
+    }
+    
+    .about_section .img-box {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .about_section .img-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .about_section .img-box img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+    
+    .about_section .detail-box .about-text {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    .about_section .detail-box .about-text p {
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    
+    .about_section .detail-box .about-text p strong {
+      color: #ffbe33;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      font-weight: 600;
+    }
+    
+    /* Улучшаем стили для шапки */
+    .header_section {
+      background: transparent;
+    }
+    
+    /* Улучшаем стили для подвала */
+    .footer_section {
+      background: #222831;
+    }
+  </style>
+
+</head>
+
+<body class="sub_page">
+
+  <!-- Видео фон -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="images/video.mp4" type="video/mp4">
+      <!-- Fallback для браузеров, которые не поддерживают видео -->
+      <img src="images/bodybeat-cars-toyota-chaser-dropped-chocolate-30.jpg" alt="Background">
+    </video>
+  </div>
+  
+  <!-- Затемнение поверх видео -->
+  <div class="video-overlay"></div>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/bodybeat-cars-toyota-chaser-dropped-chocolate-30.jpg" alt="">
+    </div>
+    <!-- шапка -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              JZX
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+            <li style="margin-right: 50px;"></li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark" href="index.html">Главная </a>
+              </li>
+              <li style="margin-right: 20px;"></li>
+              <li class="nav-item ">
+                <a  class="nav-link" href="menu.html">Машины <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item active">
+                <a  class="nav-link active" href="about.html">О Нас</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" href="book.html">Связаться с нами</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- конец шапки -->
+  </div>
+
+  <!-- про нас -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+            </div>
+            
+
+              
+              <div class="about-text" style="font-size: 1.1rem; line-height: 1.8; color: #ffffff;">
+                <p style="margin-bottom: 20px;">
+                  <strong style="color: #ffffff;">Мы специализируемся на импорте и продаже культовых японских автомобилей.</strong>
+                </p>
+                
+                <p style="margin-bottom: 20px;">
+                  Привозим машины из Японии в отличном состоянии и приводим их в не стоковый красивый вид 
+                  с качественным обвесом для дальнейшей перепродажи настоящим ценителям японского искусства.
+                </p>
+                
+                <p style="margin-bottom: 20px;">
+                  <strong style="color: #ffffff;">Наш ассортимент:</strong> культовые японские машины 80-90-2000-х годов в лучшем состоянии 
+                  и самых премиальных комплектациях.
+                </p>
+                
+                <p style="margin-bottom: 20px;">
+                  <strong style="color: #ffffff;">Дополнительно:</strong> после покупки автомобиля у нас предоставляем 
+                  техническое обслуживание на целый год.
+                </p>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- конец про нас -->
+
+  <!-- подвал -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Контакты
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +7 952 812 52 52
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Ленинский проспект 115
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              JZX
+
+            </a>
+            <p>
+              Здесь про машины
+            </p>
+            <div class="social-links">
+              <a href="https://t.me/jzx_cars" target="_blank" class="social-link">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="https://vk.com/lxstmamind" target="_blank" class="social-link">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+                <span>ВКонтакте</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Режим работы 
+          </h4>
+          <p>
+            Понедельник-Пятница
+          </p>
+          <p>
+            12:00-19:00
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+
+          &copy; <span id="displayYear"></span> Все права защищены
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- конец подвала -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- бутстрап js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- слайдер -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- изотоп -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- селект -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- карта -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- конец карты -->
+
+</body>
+
+</html>
